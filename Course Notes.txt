@@ -30,6 +30,32 @@ Course Structure
 
 
 ----- 1. Basics                                 -----
+    * app.components.html is not served by the server. Index.html is.
+    * Index.html is the single page application that Angular allows you to create.
+    
+    * Components we create have a an app.component.ts that points to the location of the component's html and css files. It has a string based Selector, which index.html
+    *   user to access the components' code.
+
+    * How is Angular triggered? The AngularCLI automatically injects the script imports (as JS bundles when ng serve is run) to the index.html 
+
+    * main.ts is the first code to be executed.
+
+    -- Order of execution --
+    1) Angular gets started -> main.ts 
+    2) main.ts starts the app by passing an app.module reference 
+        to the platformBrowserDynamic().bootstrapModule() method.
+    3) app.module.ts, the referenced module, containts a bootstrap array 
+        which lists all components which should be known to Angular.
+    
+    -- App Startup --
+    1) Angular -> main.ts started
+    2) Angular app is bootstrapped wiht app.module.ts as an arg.
+    3) app.module.ts tells Angular about app.component.ts.
+    4) Angular can know route the index.html to use the 
+        code/content that app.component.ts makes reference to.
+    
+    -- Componnets --
+    Componets are a TypeScript class that Angular can instantiate and create object based on the component.
 ----- 2. Components & Databinding               -----
 ----- 3. Directives                             -----
 ----- 4. Services & Dependencies Injection      -----
