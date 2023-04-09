@@ -1,0 +1,44 @@
+Course Structure
+    0. Getting Started
+    1. Basics
+    2. Components & Databinding
+    3. Directives
+    4. Services & Dependencies Injection
+    5. Routing
+    6. Observables
+    7. Forms
+    8. Pipes
+    9. HTTP
+    10. Authentication
+    11. Optimization
+    12. Deployment
+    13. Animations & Testing
+
+----- 0. Getting Started -----
+    Angular Versioning
+        AngularJS (Angular 1) -> Wan't future-proof due to flaws.
+        Angular 2 -> Different framework. AngularJS re-rewritten.
+        All versions above 2 are essentially the same framework.
+
+    Angular Commands and special tags
+        ng new --> Create folder
+            --no-strict --> Special mode for creating project.
+        ng serve --> Starts the app to open it on the broswer through local host
+
+    Quick Notes
+        * Angular allows us to mix static HTML with dynamic things we want to implement.
+
+
+----- 1. Basics                                 -----
+----- 2. Components & Databinding               -----
+----- 3. Directives                             -----
+----- 4. Services & Dependencies Injection      -----
+----- 5. Routing                                -----
+----- 6. Observables                            -----
+----- 7. Forms                                  -----
+----- 8. Pipes                                  -----
+----- 9. HTTP                                   -----
+----- 10. Authentication                        -----
+----- 11. Optimization                          -----
+----- 12. Deployment                            -----
+----- 13. Animations & Testing                  -----
